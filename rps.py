@@ -7,7 +7,7 @@ def play_rps():
     class RPS(Enum):
         ROCK = 1
         PAPER = 2
-        SCISSOR = 3
+        SCISSORS = 3
 
 
     playagain = True
@@ -40,15 +40,14 @@ def play_rps():
         else:
             print("🐍😃🐍 Python Wins Bad Ass !")
             
-        playagain = input("\nPlay again?\nY for Yes or \nQ to Quit \n\n")
-        if playagain.lower() == "y":
-            continue
-        else:
-            print("\n✨🎈🎉🎆🎇🧨🎊")
-            print("Thank you for playing!\n") 
-            playagain = False  
-    
-    sys.exit("🖐 Bye! 🖐")
-    
+            playagain = input("\nPlay again?\nY for Yes or \nQ to Quit \n\n")
+            if playagain.lower() == "y":
+                continue
+            else:
+                print("\n✨🎈🎉🎆🎇🧨🎊")
+                print("Thank you for playing!\n") 
+                playagain = False  
+        
+    # Start the game
     play_rps()
         
