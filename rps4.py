@@ -11,13 +11,10 @@ def play_rps():
         PAPER = 2
         SCISSOR = 3
 
-    playerchoice = input#(
-       # "\nEnter... \n1 for Rock,\n2 for Paper, or\n3 for Scissors:\n3"
-    #)
     playagain = True
 
     while playagain:
- 
+
 
 
         playerchoice = input("\nEnter your choice:\n1 for Rock,\n2 for Paper, or \n3 for Scissors:\n\n")
@@ -43,12 +40,14 @@ def play_rps():
                 print("😐 Shit! Tie Game")
             else:
                 print("🐍😃🐍 Python Wins Bad Ass !")
-            
-        global_count
+        
+        decide_winner(player, computer)
+
+        global game_count
         game_count += 1
         
         print("\nGame count; " + str(game_count))
-          
+        
         playagain = input("\nPlay again?\nY for Yes or \nQ to Quit \n\n")
         if playagain.lower() == "y":
             continue
@@ -59,4 +58,5 @@ def play_rps():
             sys.exit("🖐 Bye! 🖐")
     
     
+    play_rps()    # Start the game
     play_rps()
