@@ -1,9 +1,7 @@
 
 
 from math import pi 
-import sys
 import random as rdm
-from enum import Enum
 import kansas
 
 # print(math.pi)
